@@ -1,3 +1,5 @@
 /telegram_stat.session
 /.*_cache/
 __pycache__/
+/*.json
+/*.ndjson

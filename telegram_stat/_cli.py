@@ -1,4 +1,5 @@
 from argparse import ArgumentParser
+import json
 import sys
 import typing
 import telethon
@@ -16,9 +17,10 @@ def run(argv: typing.List[str], stream: typing.TextIO) -> int:
         api_id=args.api_id,
         api_hash=args.api_hash,
     )
+    client.start()
     channel = Channel(name=args.channel, client=client)
     for post in channel.posts:
-        print(post.id, post.views)
+        print(json.dumps(post.as_dict()))
     return 0
 
 
