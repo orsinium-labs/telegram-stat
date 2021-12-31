@@ -1,6 +1,6 @@
 # telegram-stat
 
-A CLI tool to extract Telegram channel statistics as JSON.
+A CLI tool to extract [Telegram](https://telegram.org/) channel statistics as [ndJSON](http://ndjson.org/).
 
 ## Installation
 
